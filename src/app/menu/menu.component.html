@@ -1,0 +1,9 @@
+<div class="topnav">
+  <a
+    class="active"
+    *ngFor="let menuItem of menuItems"
+    routerLink="/{{ menuItem.linkUrl }}"
+  >
+    {{ menuItem.title }}
+  </a>
+</div>
